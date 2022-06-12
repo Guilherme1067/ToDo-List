@@ -38,10 +38,11 @@ function App() {
       title: newTask,
       isTaskCompleted: false,
     };
-    console.log(tasks);
 
-    setTasks((oldArr) => [...oldArr, newTasks]);
+    if (newTask) setTasks((oldArr) => [...oldArr, newTasks]);
+    setNewTask("");
   };
+
   return (
     <>
       <Header />
@@ -49,6 +50,7 @@ function App() {
         <input
           className={styles.input}
           placeholder="Adicione uma nova tarefa"
+          value={newTask}
           onChange={({ target }) => setNewTask(target.value)}
         />
         <div className={styles.buttonContainer}>

@@ -19,8 +19,7 @@
 .circleButton {
   display: grid;
   grid-column-start: 1;
-  grid-column-end: 2;
-
+  grid-column-end: 1;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -37,7 +36,7 @@
 
 .itemContainer span {
   display: grid;
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-column-end: 25;
   font-size: 0.87;
   line-height: 1.5rem;
