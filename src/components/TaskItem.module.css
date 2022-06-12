@@ -1,0 +1,47 @@
+.itemContainer {
+  width: 46rem;
+  height: 4.5rem;
+  background: var(--gray-500);
+  display: grid;
+  /* grid-template-columns: 1fr 4fr 1fr; */
+  align-items: flex-start;
+  gap: 0.5rem;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .itemContainer {
+    width: 29rem;
+  }
+}
+
+.circleButton {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.trashButton {
+  display: grid;
+  grid-column-start: 30;
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+}
+
+.itemContainer span {
+  font-size: 0.87;
+  line-height: 1.5rem;
+  color: var(--gray-100);
+}
+
+.checked {
+  text-decoration: line-through;
+}

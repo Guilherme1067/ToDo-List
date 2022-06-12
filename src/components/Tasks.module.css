@@ -1,0 +1,84 @@
+.mainContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-shrink: initial;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.rightSide {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.rightSide strong {
+  color: var(--blue-400);
+}
+
+.leftSide strong {
+  color: var(--purple-500);
+}
+
+.counter {
+  min-width: 1.25rem;
+  width: auto;
+  height: 100%;
+  background: var(--gray-400);
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.125rem 0.5rem;
+  margin-left: 0.3rem;
+}
+
+.leftSide {
+  display: flex;
+  gap: 0.2rem;
+}
+.container {
+  width: 46rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 26rem;
+  }
+}
+
+.tasks {
+  border-top: 1px solid var(--gray-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-top: 4rem;
+}
+
+.taskListIsNotEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasks img {
+  width: 3.5rem;
+  height: 9rem;
+}
+
+.tasks strong {
+  color: var(--gray-300);
+  font-weight: bold;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.tasks p {
+  color: var(--gray-300);
+  line-height: 1.6rem;
+}

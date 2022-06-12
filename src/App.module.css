@@ -1,0 +1,48 @@
+.button {
+  width: 5.625rem;
+  height: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  color: var(--gray-100);
+  background: var(--blue-800);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  position: relative;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: center;
+  top: -1.87rem;
+  margin-bottom: 2.1rem;
+}
+
+.input {
+  width: 39.875rem;
+  height: 3.375rem;
+  padding: 0.2rem;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+}
+
+.input::placeholder {
+  /* color: var(--gray-300); */
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
